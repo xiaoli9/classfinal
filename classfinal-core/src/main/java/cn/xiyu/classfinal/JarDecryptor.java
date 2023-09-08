@@ -1,7 +1,7 @@
-package net.roseboy.classfinal;
+package cn.xiyu.classfinal;
 
 
-import net.roseboy.classfinal.util.*;
+import cn.xiyu.classfinal.util.*;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;

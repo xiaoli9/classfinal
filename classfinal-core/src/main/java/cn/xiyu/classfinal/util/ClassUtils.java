@@ -1,4 +1,4 @@
-package net.roseboy.classfinal.util;
+package cn.xiyu.classfinal.util;
 
 import javassist.*;
 import javassist.bytecode.*;

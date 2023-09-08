@@ -1,7 +1,7 @@
-package net.roseboy.classfinal;
+package cn.xiyu.classfinal;
 
-import net.roseboy.classfinal.util.JarUtils;
-import net.roseboy.classfinal.util.StrUtils;
+import cn.xiyu.classfinal.util.JarUtils;
+import cn.xiyu.classfinal.util.StrUtils;
 
 import java.lang.instrument.ClassFileTransformer;
 import java.security.ProtectionDomain;

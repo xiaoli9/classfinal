@@ -1,8 +1,8 @@
-package net.roseboy.classfinal.plugin;
+package cn.xiyu.classfinal.plugin;
 
-import net.roseboy.classfinal.Const;
-import net.roseboy.classfinal.JarEncryptor;
-import net.roseboy.classfinal.util.StrUtils;
+import cn.xiyu.classfinal.Const;
+import cn.xiyu.classfinal.JarEncryptor;
+import cn.xiyu.classfinal.util.StrUtils;
 import org.apache.maven.model.Build;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;

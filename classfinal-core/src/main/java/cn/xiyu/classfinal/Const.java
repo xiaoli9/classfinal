@@ -1,4 +1,4 @@
-package net.roseboy.classfinal;
+package cn.xiyu.classfinal;
 
 /**
  * 常量
@@ -6,7 +6,7 @@ package net.roseboy.classfinal;
  * @author roseboy
  */
 public class Const {
-    public static final String VERSION = "v1.2.1";
+    public static final String VERSION = "v1.0.0";
 
     //加密出来的文件名
     public static final String FILE_NAME = ".classes";
@@ -39,7 +39,7 @@ public class Const {
             System.out.println();
             System.out.println("=========================================================");
             System.out.println("=                                                       =");
-            System.out.println("=      Java Class Encryption Tool " + VERSION + "   by Mr.K      =");
+            System.out.println("=      Encryption Tool " + VERSION + "   by Alex      =");
             System.out.println("=                                                       =");
             System.out.println("=========================================================");
             System.out.println();
@@ -57,7 +57,7 @@ public class Const {
         System.out.println();
         System.out.println("\033[34m=                                                       \033[92m=");
         System.out.println("\033[35m=       \033[31mJava \033[92mClass \033[95mEncryption \033[96mTool\033[0m \033[37m"
-                + VERSION + "\033[0m   by \033[91mMr.K\033[0m     \033[93m=");
+                + VERSION + "\033[0m   by \033[91mAlex\033[0m     \033[93m=");
         System.out.println("\033[36m=                                                       \033[94m=");
         for (int i = 56; i >= 0; i--) {
             System.out.print(color[i % color.length] + "=\033[0m");

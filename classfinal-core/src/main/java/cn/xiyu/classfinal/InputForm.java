@@ -1,4 +1,4 @@
-package net.roseboy.classfinal;
+package cn.xiyu.classfinal;
 
 import javax.swing.*;
 import java.awt.*;

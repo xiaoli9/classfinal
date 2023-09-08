@@ -1,6 +1,6 @@
-package net.roseboy.classfinal.util;
+package cn.xiyu.classfinal.util;
 
-import net.roseboy.classfinal.Const;
+import cn.xiyu.classfinal.Const;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

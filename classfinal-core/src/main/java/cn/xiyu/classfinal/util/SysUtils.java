@@ -1,4 +1,4 @@
-package net.roseboy.classfinal.util;
+package cn.xiyu.classfinal.util;
 
 import java.net.InetAddress;
 import java.net.InterfaceAddress;

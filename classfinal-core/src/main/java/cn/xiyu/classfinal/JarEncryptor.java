@@ -1,8 +1,8 @@
-package net.roseboy.classfinal;
+package cn.xiyu.classfinal;
 
+import cn.xiyu.classfinal.util.*;
 import javassist.ClassPool;
 import javassist.NotFoundException;
-import net.roseboy.classfinal.util.*;
 
 import java.io.File;
 import java.util.*;
@@ -20,12 +20,12 @@ public class JarEncryptor {
         //org.springframework.core.io.ClassPathResource#getInputStream注入解密功能
         aopMap.put("spring.class", "org.springframework.core.io.ClassPathResource#getInputStream");
         aopMap.put("spring.code", "char[] c=${passchar};"
-                + "is=net.roseboy.classfinal.JarDecryptor.getInstance().decryptConfigFile(this.path,is,c);");
+                + "is=cn.xiyu.classfinal.JarDecryptor.getInstance().decryptConfigFile(this.path,is,c);");
         aopMap.put("spring.line", "999");
 
         //com.jfinal.kit.Prop#getInputStream注入解密功能
         aopMap.put("jfinal.class", "com.jfinal.kit.Prop#<Prop>(java.lang.String,java.lang.String)");
-        aopMap.put("jfinal.code", "char[] c=${passchar};inputStream=net.roseboy.classfinal.JarDecryptor.getInstance().decryptConfigFile(fileName,inputStream,c);");
+        aopMap.put("jfinal.code", "char[] c=${passchar};inputStream=cn.xiyu.classfinal.JarDecryptor.getInstance().decryptConfigFile(fileName,inputStream,c);");
         aopMap.put("jfinal.line", "62");
     }
 

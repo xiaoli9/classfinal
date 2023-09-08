@@ -1,7 +1,7 @@
-package net.roseboy.classfinal;
+package cn.xiyu.classfinal;
 
 
-import net.roseboy.classfinal.util.*;
+import cn.xiyu.classfinal.util.*;
 
 import java.io.File;
 import java.util.List;
@@ -22,10 +22,6 @@ public class Main {
      * @param args 参数
      */
     public static void main(String[] args) {
-
-
-
-
 
 
         Const.pringInfo();
@@ -52,7 +48,7 @@ public class Main {
         }
 
         //全部参数(需要加密的class路径,lib下的jar,包名,排除的class,依赖jar包路径,密码,机器码,需要加密的配置文件)
-        String path=null,libjars,packages,excludeClass,classpath,password=null,code,cfgfiles;
+        String path = null, libjars, packages, excludeClass, classpath, password = null, code, cfgfiles;
 
         //没有参数手动输入
         if (args == null || args.length == 0) {
@@ -84,7 +80,7 @@ public class Main {
                 Log.print("请输入加密密码:");
                 password = scanner.nextLine();
             }
-        }else{//在参数中取
+        } else {//在参数中取
             path = cmd.getOptionValue("file", "");
             libjars = cmd.getOptionValue("libjars", "");
             packages = cmd.getOptionValue("packages", "");
@@ -99,7 +95,7 @@ public class Main {
         if ("1".equals(path)) {
             path = "/Users/roseboy/fsdownload/yiyon-package-liuyuan-1.0.0.jar";
             libjars = "yiyon-*.jar,aspectjweaver-1.8.13.jar,a.jar";
-            packages = "com.yiyon,net.roseboy.*";//包名过滤
+            packages = "com.yiyon,cn.xiyu.*";//包名过滤
             excludeClass = "org.spring.*";//排除的类
             password = "123456";
             classpath = "/Users/roseboy/code-space/apache-tomcat-8.5.32/lib";
@@ -107,7 +103,7 @@ public class Main {
             Const.DEBUG = false;
         } else if ("2".equals(path)) {
             path = "/Users/roseboy/code-space/pig_project/target/pig_project_maven.war";
-            packages = "net.roseboy";//包名过滤
+            packages = "cn.xiyu";//包名过滤
             excludeClass = "org.spring";//排除的类
             password = "#";
             classpath = "/Users/roseboy/code-space/apache-tomcat-8.5.32/lib";

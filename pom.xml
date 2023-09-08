@@ -9,9 +9,9 @@
         <version>7</version>
     </parent>
 
-    <groupId>net.roseboy</groupId>
+    <groupId>cn.xiyu</groupId>
     <artifactId>classfinal</artifactId>
-    <version>1.2.1</version>
+    <version>1.0.0</version>
     <modules>
         <module>classfinal-core</module><!--主要代码在这里-->
         <module>classfinal-fatjar</module><!--单独运行的jar、javaagent-->
